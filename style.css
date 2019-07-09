@@ -1,0 +1,67 @@
+/* This is a CSS comment. Notice that CSS comments are
+enclosed by different characters than HTML comments. */
+
+/* CSS allows you to give your page style (colors, shapes, fonts, etc.)
+You can apply CSS elements to entire HTML classes.*/
+body{
+  padding: 20px 10px;
+  font-family: Helvetica;
+  max-width: 2000px;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+img{
+  max-width: 70%;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 4px;
+}
+.intro-des{
+  display: flex;
+  text-align: justify;
+}
+.concept-des{
+  display: flex;
+  text-align: justify;
+}
+h1
+{
+  text-align: center;
+  color: #294860;
+}
+p{
+  margin: 10px 0;
+}
+li{
+  font-size: 20px;
+  line-height:  44px;
+  list-style-type: inherit;
+  list-style: inherit;
+}
+ul{
+list-style-position: inherit;
+}
+.lesson{
+  background-color: #294860;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  margin: 20px auto;
+}
+h2{
+  margin: 20px;
+}
+.concept{
+  background-color: #DFEAF1;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 4px;
+  color: black;
+}
+.concept-des{
+  background-color: white;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 4px;
+  color: black;
+}
