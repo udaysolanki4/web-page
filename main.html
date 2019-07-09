@@ -5,16 +5,28 @@ text that will be ignored by the computer! -->
   <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
   This will allow the browser to display certain characters (such as non-Roman letters) correctly.
   You should include this line in the head of all of your webpages. -->
-  <title>My Notes</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+  <title>My Notes</title>
+
+    <!-- This is the title of your page (what appears in the name of a browser tab) -->
   <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML -->
 </head>
 <body> <!-- The body tag is where the "flesh" of your HTML goes -->
-  <div class="TOC">
+  <div class="intro">
     <h1>Robotics</h1>
+    <div class="intro-des">
+      <div>
     <p><b>Robotics</b>  is an interdisciplinary branch of engineering and science that includes mechanical engineering, electronic engineering, information engineering, computer science, and others. Robotics deals with the design, construction, operation, and use of robots, as well as computer systems for their control, sensory feedback, and information processing.
     </p>
     <p>These technologies are used to develop machines that can substitute for humans and replicate human actions. Robots can be used in many situations and for lots of purposes, but today many are used in dangerous environments (including bomb detection and deactivation), manufacturing processes, or where humans cannot survive (e.g. in space, under water, in high heat, and clean up and containment of hazardous materials and radiation). Robots can take on any form but some are made to resemble humans in appearance. This is said to help in the acceptance of a robot in certain replicative behaviors usually performed by people. Such robots attempt to replicate walking, lifting, speech, cognition, and basically anything a human can do. Many of today's robots are inspired by nature, contributing to the field of bio-inspired robotics.
     </p>
+  </div>
+    <div class="img">
+    <img src="image/Shadow_Hand_Bulb_large.jpg" alt="error">
+    </div>
+
+    </div>
+  </div>
+  <div class="toc">
     <h2>Table of Contents</h2>
     <ol>
       <li><a href="#lesson-1">Etymology </a></li>
@@ -22,9 +34,10 @@ text that will be ignored by the computer! -->
       <li><a href="#lesson-3">Robotics Aspects </a></li>
       <li><a href="#lesson-4">Application </a></li>
       <li><a href="#lesson-5">Components </a></li>
+
       <ul>
-        <li><a href="#lesson-5-1">Power Source</a> </li>
-        <li><a href="#lesson-5-2">Actuation</a> </li>
+        <li value="5.1"><a href="#lesson-5-1">Power Source</a> </li>
+        <li value="5.2"><a href="#lesson-5-2">Actuation</a> </li>
         <ul>
           <li><a href="#lesson-5-2-1">Electric Motors</a> </li>
           <li><a href="#lesson-5-2-2">Linear Actuators</a> </li>
@@ -45,5 +58,135 @@ text that will be ignored by the computer! -->
       </ul>
     </ol>
   </div>
-  <!-- Write your main HTML content here -->
+  <h2>Important Concepts</h2>
+  <div class="lesson">
+    <h3 id=lesson-1>Lesson 1: Etymology</h3>
+    <div class="concept-des">
+      <p>The word robotics was derived from the word robot, which was introduced to the public by Czech writer Karel Čapek in his play R.U.R. (Rossum's Universal Robots), which was published in 1920.[4] The word robot comes from the Slavic word robota, which means labour/work. The play begins in a factory that makes artificial people called robots, creatures who can be mistaken for humans – very similar to the modern ideas of androids. Karel Čapek himself did not coin the word. He wrote a short letter in reference to an etymology in the Oxford English Dictionary in which he named his brother Josef Čapek as its actual originator.
+      </p>
+    </div>
+    <h3 id=lesson-2>Lesson 2: History</h3>
+    <div class="concept-des">
+      <p>Fully autonomous only appeared in the second half of the 20th century. The first digitally operated and programmable robot, the Unimate, was installed in 1961 to lift hot pieces of metal from a die casting machine and stack them. Commercial and industrial robots are widespread today and used to perform jobs more cheaply, more accurately and more reliably, than humans. They are also employed in some jobs which are too dirty, dangerous, or dull to be suitable for humans. Robots are widely used in manufacturing, assembly, packing and packaging, mining, transport, earth and space exploration, surgery, weaponry, laboratory research, safety, and the mass production of consumer and industrial goods.
+      </p>
+    </div>
+    <h3 id=lesson-3>Lesson 3: Robotics Aspects</h3>
+    <div class="concept-des">
+      <p>Robots all have some kind of mechanical construction, a frame, form or shape designed to achieve a particular task. For example, a robot designed to travel across heavy dirt or mud, might use caterpillar tracks. The mechanical aspect is mostly the creator's solution to completing the assigned task and dealing with the physics of the environment around it. Form follows function.
+      </p>
+      <img src="image\220px-Computer_Circuit_Board_MOD_45153624.jpg" alt="Error">
+    </div>
+    <h3 id=lesson-4>Lesson 4: Application</h3>
+    <div class="concept-des">
+      <p>As more and more robots are designed for specific tasks this method of classification becomes more relevant. For example, many robots are designed for assembly work, which may not be readily adaptable for other applications. They are termed as "assembly robots". For seam welding, some suppliers provide complete welding systems with the robot i.e. the welding equipment along with other material handling facilities like turntables etc. as an integrated unit. Such an integrated robotic system is called a "welding robot" even though its discrete manipulator unit could be adapted to a variety of tasks. Some robots are specifically designed for heavy load manipulation, and are labelled as "heavy duty robots".
+      </p>
+      
+      <img  src="image\250px-Atlas_from_boston_dynamics.jpg" alt="Error">
+
+    </div>
+    <h3 id=lesson-5>Lesson 5: Components</h3>
+    <div class="concept" id=lesson-5-1>
+      <h4>5.1 Power Source</h4>
+      <div class="concept-des">
+        <p>At present, mostly (lead–acid) batteries are used as a power source. Many different types of batteries can be used as a power source for robots. They range from lead–acid batteries, which are safe and have relatively long shelf lives but are rather heavy compared to silver–cadmium batteries that are much smaller in volume and are currently much more expensive. Designing a battery-powered robot needs to take into account factors such as safety, cycle lifetime and weight. Generators, often some type of internal combustion engine, can also be used. However, such designs are often mechanically complex and need a fuel, require heat dissipation and are relatively heavy. A tether connecting the robot to a power supply would remove the power supply from the robot entirely.
+        </p>
+        <img src="image\250px-PIA19664-MarsInSightLander-Assembly-20150430.jpg" alt="Error">
+
+      </div>
+    </div>
+    <div class="concept" id=lesson-5-2>
+      <h4>5.2 Actuation</h4>
+      <div class="concept-des">
+        <p>Actuators are the "muscles" of a robot, the parts which convert stored energy into movement.[34] By far the most popular actuators are electric motors that rotate a wheel or gear, and linear actuators that control industrial robots in factories. There are some recent advances in alternative types of actuators, powered by electricity, chemicals, or compressed air.
+        </p>
+      </div>
+      <div class="concept" id=lesson-5-2-1>
+        <h5>5.2.1 Electric Motors</h5>
+        <div class="concept-des">
+          <p>The vast majority of robots use electric motors, often brushed and brushless DC motors in portable robots or AC motors in industrial robots and CNC machines. These motors are often preferred in systems with lighter loads, and where the predominant form of motion is rotational.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id=lesson-5-2-2>
+        <h5>5.2.2 Linear Actuators</h5>
+        <div class="concept-des">
+          <p>Various types of linear actuators move in and out instead of by spinning, and often have quicker direction changes, particularly when very large forces are needed such as with industrial robotics. They are typically powered by compressed and oxidized air (pneumatic actuator) or an oil (hydraulic actuator).
+          </p>
+        </div>
+      </div>
+      <div class="concept" id=lesson-5-2-3>
+        <h5>5.2.3 Series Elastic Actuators</h5>
+        <div class="concept-des">
+          <p>A flexure is designed as part of the motor actuator, to improve safety and provide robust force control, energy efficiency, shock absorption (mechanical filtering) while reducing excessive wear on the transmission and other mechanical components. The resultant lower reflected inertia can improve safety when a robot is interacting with humans or during collisions. It has been used in various robots, particularly advanced manufacturing robots [35] and walking humanoid robots.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id=lesson-5-2-4>
+        <h5>5.2.4 Air Muscles</h5>
+        <div class="concept-des">
+          <p>Pneumatic artificial muscles, also known as air muscles, are special tubes that expand(typically up to 40%) when air is forced inside them. They are used in some robot applications.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id=lesson-5-2-5>
+        <h5>5.2.5 Muscle Wire</h5>
+        <div class="concept-des">
+          <p>Muscle wire, also known as shape memory alloy, Nitinol® or Flexinol® wire, is a material which contracts (under 5%) when electricity is applied. They have been used for some small robot applications.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id=lesson-5-2-6>
+        <h5>5.2.6 Electroactive polymer</h5>
+        <div class="concept-des">
+          <p>EAPs or EPAMs are a plastic material that can contract substantially (up to 380% activation strain) from electricity, and have been used in facial muscles and arms of humanoid robots,[43] and to enable new robots to float,[44] fly, swim or walk.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id=lesson-5-2-7>
+        <h5>5.2.7 Piezo motor</h5>
+        <div class="concept-des">
+          <p>Recent alternatives to DC motors are piezo motors or ultrasonic motors. These work on a fundamentally different principle, whereby tiny piezoceramic elements, vibrating many thousands of times per second, cause linear or rotary motion. There are different mechanisms of operation; one type uses the vibration of the piezo elements to step the motor in a circle or a straight line.[46] Another type uses the piezo elements to cause a nut to vibrate or to drive a screw. The advantages of these motors are nanometer resolution, speed, and available force for their size.[47] These motors are already available commercially, and being used on some robots.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id=lesson-5-2-8>
+        <h5>5.2.8 Elastic nanotubes</h5>
+        <div class="concept-des">
+          <p>Elastic nanotubes are a promising artificial muscle technology in early-stage experimental development. The absence of defects in carbon nanotubes enables these filaments to deform elastically by several percent, with energy storage levels of perhaps 10 J/cm3 for metal nanotubes. Human biceps could be replaced with an 8 mm diameter wire of this material. Such compact "muscle" might allow future robots to outrun and outjump humans.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="concept" id=lesson-5-3>
+      <h4>5.3 Sensing</h4>
+      <div class="concept-des">
+        <p>Sensors allow robots to receive information about a certain measurement of the environment, or internal components. This is essential for robots to perform their tasks, and act upon any changes in the environment to calculate the appropriate response. They are used for various forms of measurements, to give the robots warnings about safety or malfunctions, and to provide real-time information of the task it is performing.
+        </p>
+      </div>
+      <div class="concept" id=lesson-5-3-1>
+        <h5>5.3.1 Touch</h5>
+        <div class="concept-des">
+          <p>Current robotic and prosthetic hands receive far less tactile information than the human hand. Recent research has developed a tactile sensor array that mimics the mechanical properties and touch receptors of human fingertips.[51][52] The sensor array is constructed as a rigid core surrounded by conductive fluid contained by an elastomeric skin. Electrodes are mounted on the surface of the rigid core and are connected to an impedance-measuring device within the core. When the artificial skin touches an object the fluid path around the electrodes is deformed, producing impedance changes that map the forces received from the object. The researchers expect that an important function of such artificial fingertips will be adjusting robotic grip on held objects.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id=lesson-5-3-2>
+        <h5>5.3.2 Vision</h5>
+        <div class="concept-des">
+          <p>Computer vision is the science and technology of machines that see. As a scientific discipline, computer vision is concerned with the theory behind artificial systems that extract information from images. The image data can take many forms, such as video sequences and views from cameras.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id=lesson-5-3-3>
+        <h5>5.3.3 Other</h5>
+        <div class="concept-des">
+          <p>Other common forms of sensing in robotics use lidar, radar, and sonar.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
 </body>
